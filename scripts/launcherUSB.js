@@ -9,11 +9,6 @@ define(['usb', 'deviceConstants'], function(usb, DEVICE_CONSTANTS) {
 	launcher.open();
 
 	var launcherInterface = launcher.interface(0);
-	if (launcherInterface.isKernelDriverActive()) {
-	  launcherInterface.detachKernelDriver();
-	}
-	// comment out the claim function since it's problematic in mac OS
-	// launcherInterface.claim();
 
 	process.on('exit', function(){
 	  launcherInterface.release();
