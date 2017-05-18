@@ -1,6 +1,6 @@
 {
   "name": "dream-cheeky-windows-driver",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Windows Driver for Dream Cheeky Thunder Missile Launcher",
   "main": "main.js",
   "dependencies": {
