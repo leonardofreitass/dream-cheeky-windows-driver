@@ -62,7 +62,7 @@ define(['usb', 'signal', 'led', 'trigger', 'deviceConstants', 'shortHandTranslat
     DCDriver.chain = function(array, callback){
 
         var callNext = function(next){
-            setTimeout(next, 100);
+            setTimeout(next, 500);
         };
 
         var execute = function(index){
