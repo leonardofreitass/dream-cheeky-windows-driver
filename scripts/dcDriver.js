@@ -10,7 +10,7 @@ define(['usb', 'signal', 'led', 'trigger', 'deviceConstants', 'shortHandTranslat
 
     DCDriver.turnOffDebugMode = function(){
         usb.setDebugLevel(0);
-    }
+    };
 
 
     DCDriver.moveUp = function (durationMS, callback) {
@@ -55,6 +55,38 @@ define(['usb', 'signal', 'led', 'trigger', 'deviceConstants', 'shortHandTranslat
         DCDriver.execute('l8000,d2000', callback);
     };
 
+    DCDriver.chain = function(array, callback){
+
+        var callNext = function(next){
+            setTimeout(next, 100);
+        };
+
+        var execute = function(index){
+
+            var command = array[index];
+            var func = DCDriver[shortHandTranslationMap[command.command]];
+
+            var next = callNext.bind(this, execute.bind(this, index + 1));
+
+            if (index === array.length - 1){
+                next = callback;
+            }
+
+            if (func === DCDriver.park || func === DCDriver.stop) {
+                func(next);
+            }
+            else if (func === DCDriver.file) {
+                func(1, next);
+            }
+            else {
+                var number = command.ms;
+                func(number, next);
+            }
+        };
+
+        execute(0);
+    };
+
     DCDriver.execute = function (commands, callback) {
         if (__.isString(commands)) {
             DCDriver.execute(commands.split(','), callback);
@@ -81,7 +113,7 @@ define(['usb', 'signal', 'led', 'trigger', 'deviceConstants', 'shortHandTranslat
                 DCDriver.execute(commands, callback);
             }
         }
-    }
+    };
 
     return DCDriver;
 });
