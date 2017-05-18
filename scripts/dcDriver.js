@@ -52,7 +52,11 @@ define(['usb', 'signal', 'led', 'trigger', 'deviceConstants', 'shortHandTranslat
     };
 
     DCDriver.park = function (callback) {
-        DCDriver.execute('l8000,d2000', callback);
+        var parkChain = [
+            {command: 'l', ms: 8000},
+            {command: 'd', ms: 2000}
+        ];
+        DCDriver.chain(parkChain, callback);
     };
 
     DCDriver.chain = function(array, callback){
