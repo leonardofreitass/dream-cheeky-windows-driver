@@ -1,4 +1,4 @@
-dream-cheeky-thunder-driver
+dream-cheeky-windows-driver
 ===========================
 
 Nodejs API for controller dream cheeky missile launcher that works on windows.
