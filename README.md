@@ -3,6 +3,7 @@ dream-cheeky-windows-driver
 
 Nodejs API for controller dream cheeky missile launcher that works on windows.
 This is a reinforcement of [guillaumedelre's *dream-cheeky-thunder-driver* library](https://github.com/guillaumedelre/dream-cheeky-thunder-driver), with workarounds to run on windows and improvements on `led` and `execute commands` features.
+It *should* work on linux as well, since the kernel check is not necessary for the device.
 
 ____________________
 
