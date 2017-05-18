@@ -16,124 +16,124 @@ ____________________
 API
 ==============
 
-###DCDriver
-####DCDriver.DEVICE_CONSTANTS
+### DCDriver
+#### DCDriver.DEVICE_CONSTANTS
 **Description:** 
 
 A JS object containing constants for Dream Cheeky Thunder Launcher.
 
-####DCDriver.turnOnDebugMode()
+#### DCDriver.turnOnDebugMode()
 **Description:** 
 
 Turn on debug mode (level 4) of USB.
 
-####DCDriver.turnOffDebugMode()
+#### DCDriver.turnOffDebugMode()
 **Description:** 
 
 Turn off USB debug mode (ie. debug level 0).
 
-####DCDriver.moveUp(`durationMS`[, `callback`])
+#### DCDriver.moveUp(`durationMS`[, `callback`])
 **Description:**
 
 Move up for a period of time.
 
 **Parameters:**
 
-#####`durationMS`
+##### `durationMS`
 Type: Number
 
 Duration of moving time in ms.
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when the movement is done.
 
-####DCDriver.moveDown(`durationMS`[, `callback`])
+#### DCDriver.moveDown(`durationMS`[, `callback`])
 **Description:**
 
 Move down for a period of time.
 
 **Parameters:**
 
-#####`durationMS`
+##### `durationMS`
 Type: Number
 
 Duration of moving time in ms.
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when the movement is done.
 
-####DCDriver.moveLeft(`durationMS`[, `callback`])
+#### DCDriver.moveLeft(`durationMS`[, `callback`])
 **Description:**
 
 Move left for a period of time.
 
 **Parameters:**
 
-#####`durationMS`
+##### `durationMS`
 Type: Number
 
 Duration of moving time in ms.
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when the movement is done.
 
-####DCDriver.moveRight(`durationMS`[, `callback`])
+#### DCDriver.moveRight(`durationMS`[, `callback`])
 **Description:**
 
 Move right for a period of time.
 
 **Parameters:**
 
-#####`durationMS`
+##### `durationMS`
 Type: Number
 
 Duration of moving time in ms.
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when the movement is done.
 
-####DCDriver.stop([`callback`])
+#### DCDriver.stop([`callback`])
 
 Stop movement immediately.
 
 **Parameters:**
 
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when the movement is stopped.
-####DCDriver.fire(`numberOfShot`[, `callback`])
+#### DCDriver.fire(`numberOfShot`[, `callback`])
 
 Shoot for `numberOfShot` times consecutively.
 
 **Parameters:**
 
-#####`numberOfShot`
+##### `numberOfShot`
 Type: Number
 
 Number of shots
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when all the shooting is done (and when the target is utterly destroyed!).
 
 
-####DCDriver.park([`callback`])
+#### DCDriver.park([`callback`])
 
 Go back to a fixed default location (leftmost and bottommost position).
 
 **Parameters:**
 
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when all the movement is done.
 
-####DCDriver.execute(`commands`[, `callback`])
+#### DCDriver.execute(`commands`[, `callback`])
 
 **NOT STABLE** yet, will be improved.
 
@@ -141,24 +141,24 @@ Convenient method to specify a chain of commands
 
 **Parameters:**
 
-#####`commands`
+##### `commands`
 Type: String
 
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when the chain of commands is done.
 
-####DCDriver.led(`commands`[, `callback`])
+#### DCDriver.led(`commands`[, `callback`])
 
 Activate the led on th device
 
 **Parameters:**
 
-#####`commands`
+##### `commands`
 Type: String
 
-#####`callback`
+##### `callback`
 Type: Function()
 
 A function to execute when done.
