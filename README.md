@@ -1,15 +1,15 @@
 dream-cheeky-thunder-driver
 ===========================
 
-Nodejs API for controller dream cheeky missile launcher.
-This is a reinforcement of [jackkwong's *dream-cheeky-api* library](https://github.com/jackkwong/dream-cheeky-api), which handle led.
+Nodejs API for controller dream cheeky missile launcher that works on windows.
+This is a reinforcement of [guillaumedelre's *dream-cheeky-thunder-driver* library](https://github.com/guillaumedelre/dream-cheeky-thunder-driver), with workarounds to run on windows and improvements on `led` and `execute commands` features.
 
 ____________________
 
 Installation
 ==============
-1. `npm install dream-cheeky-thunder-driver`
-2. In your js file, add `var DCDriver = require('dream-cheeky-thunder-driver');`
+1. `npm install dream-cheeky-windows-driver`
+2. In your js file, add `var DCDriver = require('dream-cheeky-windows-driver');`
 
 ____________________
 
