@@ -1,0 +1,31 @@
+{
+  "name": "dream-cheeky-windows-driver",
+  "version": "0.0.1",
+  "description": "Windows Driver for Dream Cheeky Thunder Missile Launcher",
+  "main": "main.js",
+  "dependencies": {
+    "requirejs": "^2.1.16",
+    "underscore": "^1.7.0",
+    "usb": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonardofreitass/dream-cheeky-windows-driver.git"
+  },
+  "keywords": [
+    "Driver",
+    "Dream",
+    "Cheeky",
+    "USB",
+    "Missile",
+    "Launcher",
+    "Thunder",
+	"Windows"
+  ],
+  "author": "Leonardo Freitas",
+  "license": "MIT"
+}
